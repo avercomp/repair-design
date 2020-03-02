@@ -20,9 +20,10 @@ gulp.task('browser-sync', function() {
 });
 
 // minify css using gulp.
-gulp.task('default', function () {
+gulp.task('mincss', function (done) {
     gulp.src('./*.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('css'));
+        done();
 });
