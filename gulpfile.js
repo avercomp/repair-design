@@ -3,12 +3,6 @@ const browserSync = require('browser-sync').create();
 const  cssmin = require('gulp-cssmin');
 const  rename = require('gulp-rename');
 
-// Hello
-gulp.task ('hello', function(done) {
-    console.log ('Привет Мир!');
-    done();
-} )
-
 // Static server
 gulp.task('browser-sync', function() {
     browserSync.init({
