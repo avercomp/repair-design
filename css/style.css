@@ -13,6 +13,11 @@
   font-display: wrap; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
 
@@ -356,7 +361,9 @@ template {
     color: #fff; }
 
 .hero {
+  font-family: 'Roboto';
   position: relative;
+  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
@@ -381,6 +388,12 @@ template {
 
 .title {
   margin: 0; }
+
+*, *:before {
+  box-sizing: border-box; }
+
+*, *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: 'Futura Book', sans-serif;
