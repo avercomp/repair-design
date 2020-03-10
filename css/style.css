@@ -544,7 +544,7 @@ body {
 
 @media screen and (max-width: 375px) {
   .hero__button {
-    min-width: 26.86rem; }
+    width: 100%; }
   .hero__text {
     font-size: 1.5rem; }
   .hero__content {
