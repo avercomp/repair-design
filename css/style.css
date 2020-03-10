@@ -541,3 +541,18 @@ body {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
+
+@media screen and (max-width: 375px) {
+  .hero__button {
+    min-width: 26.86rem; }
+  .hero__text {
+    font-size: 1.5rem; }
+  .hero__content {
+    margin: auto;
+    max-width: 26.7rem; }
+  .container {
+    width: 90%; } }
+
+@media screen and (max-height: 640px) {
+  .hero__scroll-down {
+    display: none; } }

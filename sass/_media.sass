@@ -38,4 +38,19 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
-        
+
+@media screen and ( max-width: 375px )     
+    .hero
+        &__button
+            min-width: 26.86rem
+        &__text
+            font-size: 1.5rem
+        &__content
+            margin: auto
+            max-width: 26.7rem        
+    .container
+        width: 90%
+
+@media screen and ( max-height: 640px )
+    .hero__scroll-down
+        display: none
