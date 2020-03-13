@@ -380,6 +380,32 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
+.button-up {
+  left: 20px;
+  margin: 0;
+  position: fixed;
+  bottom: 50px;
+  font-family: 'Yeseva One', cursive;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 10rem;
+  min-height: 4rem;
+  background-color: #131313;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff; }
+  .button-up::after {
+    transform: rotate(180deg);
+    content: '';
+    background: url("../img/arrow-down.svg") no-repeat center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #E3B873;
+    border-radius: 50%;
+    margin-left: 17px; }
+
 .container {
   width: 85%;
   max-width: 1256px;
