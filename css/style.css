@@ -827,7 +827,11 @@ img {
     margin: auto;
     max-width: 26.7rem; }
   .container {
-    width: 90%; } }
+    width: 90%; }
+  .design {
+    background-color: #252525; }
+  .section-title__text {
+    color: #fff; } }
 
 @media screen and (max-height: 640px) {
   .hero__scroll-down {
