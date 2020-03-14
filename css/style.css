@@ -781,7 +781,11 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .types .card__title {
+    min-height: 2.9rem; }
+  .types .card__pricetag {
+    font-size: 1.14rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
