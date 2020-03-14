@@ -44,6 +44,35 @@ $(document).ready(function(){
         }, 1000);
         return false;
     });
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
     
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    
+        // // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+      })
+    var next = $('.swiper-button-next');
+    var prev = $('.swiper-button-prev');
+    var bullets = $('.swiper-pagination');
+
+    next.css('left', prev.width() +10 +bullets.width() +10)
+    bullets.css('left', prev.width() +10)
 });
+
+
 
