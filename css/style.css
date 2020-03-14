@@ -384,7 +384,7 @@ template {
   left: 20px;
   margin: 0;
   position: fixed;
-  bottom: 50px;
+  bottom: 35px;
   font-family: 'Yeseva One', cursive;
   font-size: 12px;
   display: flex;
@@ -411,6 +411,17 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  flex-basis: 50%; }
+
 *, *:before {
   box-sizing: border-box; }
 
@@ -429,10 +440,27 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #fff; }
   .section-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    text-align: center; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      line-height: 138.6%;
+      color: #E3B873; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 92px;
+        height: 1px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
     .section-title__text {
       max-width: 52.85rem;
       text-align: center;
@@ -441,6 +469,12 @@ img {
       text-transform: none;
       font-size: 1.43rem;
       margin-bottom: 3.57rem; }
+      .section-title__text--left {
+        text-align: left; }
+      .section-title__text--project {
+        max-width: 31.57rem;
+        font-size: 1.28rem;
+        line-height: 2.07rem; }
     .section-title__img::before {
       content: '';
       display: inline-block;
@@ -512,6 +546,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     max-width: 47.85rem;
     position: relative;
@@ -534,6 +577,7 @@ img {
     max-width: 80px;
     height: 100%; }
   .hero__scroll-down {
+    z-index: 3;
     font-family: 'Yeseva One', cursive;
     font-size: 12px;
     display: flex;
@@ -588,14 +632,6 @@ img {
 
 .types__section-title {
   margin-bottom: 2rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__text {
   position: relative;

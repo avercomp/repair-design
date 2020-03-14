@@ -11,12 +11,35 @@ body
     font-size: 1rem
 img 
     max-width: 100%
+
+// .section-title__heading--primary
+//     color: $primary
+    
 .section 
     padding: 60px 0
+    &--dark
+        background-color: $dark
+        color: $light
     &-title
         text-align: center
-        text-transform: uppercase
-        font-family: 'Yeseva One', cursive
+        &--left
+            text-align: left
+        &__heading 
+            text-transform: uppercase
+            font-family: 'Yeseva One', cursive 
+            line-height: 138.6%
+            &--primary
+            color: $primary 
+        &__word
+            display: flex
+            align-items: center
+            &::after 
+                content: ''
+                width: 92px
+                height: 1px
+                background-color: $primary
+                margin-left: 2rem
+
         &__text
             max-width: 52.85rem
             text-align: center
@@ -25,6 +48,12 @@ img
             text-transform: none
             font-size: 1.43rem
             margin-bottom: 3.57rem
+            &--left
+                text-align: left
+            &--project
+                max-width: 31.57rem
+                font-size: 1.28rem
+                line-height: 2.07rem
 
         &__img::before
             content: ''
@@ -43,3 +72,4 @@ img
             height: 2px
             background-color: $primary
             margin: 0 10px
+
