@@ -797,18 +797,20 @@ img {
     margin-bottom: 5rem; }
   .card__text {
     margin-left: 0; }
-  .section-title__heading--primary {
-    font-size: 1.83rem;
-    margin-top: 0; }
-  .section-title__word {
-    display: block; }
-    .section-title__word::after {
-      display: none; }
-  .section-title__text--left {
-    font-size: 1.17rem;
-    max-width: 305px; }
-  .section--dark {
-    padding: 0; }
+  .section {
+    background-color: #181818; }
+    .section-title__heading--primary {
+      font-size: 1.83rem;
+      margin-top: 0; }
+    .section-title__word {
+      display: block; }
+      .section-title__word::after {
+        display: none; }
+    .section-title__text--left {
+      font-size: 1.17rem;
+      max-width: 305px; }
+    .section--dark {
+      padding: 3.33rem; }
   .swiper-slide__text:nth-child(-n+2) {
     margin-bottom: 0; }
   .swiper-slide__heading {
@@ -816,7 +818,13 @@ img {
   .swiper-slide__value {
     font-size: 1.17rem; }
   .col-50-margin-top {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .design__section-title {
+    color: #fff; }
+  .types {
+    background-color: #fff; }
+  .hero::after {
+    display: none; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {

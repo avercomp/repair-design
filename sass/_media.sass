@@ -35,6 +35,7 @@
         &__text
             margin-left: 0
     .section
+        background-color: #181818
         &-title
             &__heading
                 &--primary
@@ -49,7 +50,7 @@
                     font-size: 1.17rem
                     max-width: 305px
         &--dark
-            padding: 0
+            padding: 3.33rem
     .swiper
         &-slide
             &__text:nth-child(-n+2)
@@ -62,6 +63,14 @@
 
     .col-50-margin-top
         margin-top: 30px
+    .design
+        &__section
+            &-title
+                color: $light
+    .types
+        background-color: $light
+    .hero::after 
+        display: none
 
             
 @media screen and ( max-width: 570px )
