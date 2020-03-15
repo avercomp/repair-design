@@ -810,7 +810,7 @@ img {
       font-size: 1.17rem;
       max-width: 305px; }
     .section--dark {
-      padding: 3.33rem; }
+      padding-top: 3.33rem; }
   .swiper-slide__text:nth-child(-n+2) {
     margin-bottom: 0; }
   .swiper-slide__heading {
