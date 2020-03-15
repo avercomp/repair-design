@@ -791,10 +791,32 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-50 {
+    width: 100%; }
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .section-title__heading--primary {
+    font-size: 1.83rem;
+    margin-top: 0; }
+  .section-title__word {
+    display: block; }
+    .section-title__word::after {
+      display: none; }
+  .section-title__text--left {
+    font-size: 1.17rem;
+    max-width: 305px; }
+  .section--dark {
+    padding: 0; }
+  .swiper-slide__text:nth-child(-n+2) {
+    margin-bottom: 0; }
+  .swiper-slide__heading {
+    font-size: 1.17rem; }
+  .swiper-slide__value {
+    font-size: 1.17rem; }
+  .col-50-margin-top {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
