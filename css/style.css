@@ -921,7 +921,25 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .control {
+    padding-bottom: 0; }
+    .control__input-group {
+      flex-basis: 100%;
+      margin-bottom: 5rem; }
+    .control__policy {
+      margin-top: -4rem; }
+      .control__policy__label {
+        justify-content: start; }
+    .control__button {
+      margin: auto;
+      padding: 1.66rem 10.33rem;
+      margin-top: 5rem;
+      order: 4; }
+  .types--margin-top {
+    margin-top: -25px; }
+  .types__section-title {
+    padding-top: 25px; } }
 
 @media screen and (max-width: 375px) {
   .hero__button {
