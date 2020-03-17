@@ -672,7 +672,8 @@ img {
   flex-basis: 100%;
   margin-top: 1.2rem; }
   .control__policy__label {
-    justify-content: center; }
+    justify-content: center;
+    font-size: 1.33rem; }
 
 .control__input-group {
   display: flex;
@@ -894,7 +895,11 @@ img {
   .types {
     background-color: #fff; }
   .hero::after {
-    display: none; } }
+    display: none; }
+  .control__form, .control__text {
+    color: #fff; }
+  .control__text {
+    font-size: 1.16rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {

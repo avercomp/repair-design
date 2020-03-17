@@ -51,7 +51,7 @@
                     max-width: 305px
         &--dark
             padding-top: 3.33rem
-            
+
     .swiper
         &-slide
             &__text:nth-child(-n+2)
@@ -72,6 +72,11 @@
         background-color: $light
     .hero::after 
         display: none
+    .control
+        &__form, &__text 
+            color: $light
+        &__text 
+            font-size: 1.16rem
 
             
 @media screen and ( max-width: 570px )
@@ -97,6 +102,7 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+
 
 
 @media screen and ( max-width: 375px )     
