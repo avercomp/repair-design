@@ -49,8 +49,6 @@
                 &--left
                     font-size: 1.17rem
                     max-width: 305px
-        &--dark
-            padding-top: 3.33rem
 
     .swiper
         &-slide
@@ -77,6 +75,18 @@
             color: $light
         &__text 
             font-size: 1.16rem
+    .footer
+        background: none
+        padding: 0
+        &__menu
+            display: none
+        &__wrap
+            margin: 0 auto
+        &__container
+            width: 100%
+    .work
+        padding-bottom: 3rem
+        
 
             
 @media screen and ( max-width: 570px )
@@ -114,10 +124,14 @@
                 justify-content: start
 
         &__button 
+            width: 80%
             margin: auto
-            padding: 1.66rem 10.33rem
             margin-top: 5rem
             order: 4
+    .footer
+        &__button
+            width: 80%
+            margin: auto
     .types
         &--margin-top
             margin-top: -25px
@@ -136,14 +150,19 @@
         &__content
             margin: auto
             max-width: 26.7rem        
-    .container
-        width: 90%
     .design
         background-color: #252525
     .section
         &-title
             &__text
                 color: $light
+    .control
+        &__button
+            width: 100%
+    .footer
+        &__button
+            width: 100%
+            margin: auto
 
 @media screen and ( max-height: 640px )
     .hero__scroll-down
