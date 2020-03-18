@@ -990,8 +990,8 @@ img {
     margin: auto;
     max-width: 22.86rem; }
   .hero__button {
+    width: 100%;
     display: block;
-    min-width: 22.86rem;
     margin-bottom: 1.85rem; }
   .control {
     padding-bottom: 0; }
