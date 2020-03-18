@@ -401,6 +401,12 @@ template {
     border-radius: 50%;
     margin-left: 17px; }
 
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -689,6 +695,10 @@ img {
 .control__button {
   padding: 1.2857rem 4.785rem; }
 
+.control__input {
+  color: #181818;
+  margin-top: 0.8rem; }
+
 .video__play {
   position: relative;
   margin: auto; }
@@ -783,8 +793,11 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem;
     margin-bottom: 1rem; }
+    .modal__input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.428rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {

@@ -1,16 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function(event) {
-//     const modal = document.querySelector('.modal');
-//     const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-//     const closeBtn = document.querySelector('.modal__close');
-//     const switchModal = () => {
-//         modal.classList.toggle('modal--visible');
-//     }
-//     console.log(modalBtn);
-//     modalBtn.forEach(element => {
-//         element.addEventListener('click', switchModal);
-//     });
-//     closeBtn.addEventListener('click', switchModal)
-// });
 
 $(document).ready(function() {
     var modal = $('.modal'),
@@ -76,6 +63,79 @@ $(document).ready(function(){
     bullets.css('left', prev.width() +10)
     
     new WOW().init();
+
+    $('.modal__form').validate ({
+        errorClass: "invalid",
+        rules: {
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            userEmail: {
+              required: true,
+              email: true
+            }
+          },
+            messages: {
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче двух букв"
+            },  
+            userPhone: "Телефон обязателен",
+            userEmail: {
+              required: "Обязательно укажите Ваш E-mail",
+              email: "введите в формате: name@domain.com"
+            }
+          }
+    });
+    $('.footer__form').validate ({
+        errorClass: "invalid",
+        rules: {
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            userQuestion: {
+              required: true,
+            }
+          },
+            messages: {
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче двух букв"
+                },  
+                userPhone: "Телефон обязателен",
+
+                userQuestion: {
+                    required: "Задайте вопрос",
+                }
+          }
+    });
+    $('.control__form').validate ({
+        errorClass: "invalid",
+        rules: {
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+          },
+            messages: {
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче двух букв"
+                },  
+                userPhone: "Телефон обязателен",
+          }
+    });
+    
+    // Маска для телефона 
+    $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
 });
 
 
