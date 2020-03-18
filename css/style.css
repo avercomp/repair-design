@@ -350,8 +350,17 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   color: #fff;
-  padding: 0.5rem 0; }
-  .input--light {
+  padding: 0.5rem 0;
+  outline: none; }
+  .input--light::-webkit-input-placeholder {
+    color: #fff; }
+  .input--light::-moz-placeholder {
+    color: #fff; }
+  .input--light:-ms-input-placeholder {
+    color: #fff; }
+  .input--light::-ms-input-placeholder {
+    color: #fff; }
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -401,7 +410,7 @@ template {
     border-radius: 50%;
     margin-left: 17px; }
 
-label.invalid {
+.invalid {
   color: tomato; }
 
 input.invalid {

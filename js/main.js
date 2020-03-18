@@ -78,6 +78,8 @@ $(document).ready(function(){
               email: true
             }
           },
+            errorElement: "div",
+            errorClass: "invalid",
             messages: {
                 userName: {
                     required: "Имя обязательно",
@@ -103,6 +105,8 @@ $(document).ready(function(){
               required: true,
             }
           },
+          errorElement: "div",
+          errorClass: "invalid",
             messages: {
                 userName: {
                     required: "Имя обязательно",
@@ -125,6 +129,8 @@ $(document).ready(function(){
             },
             userPhone: "required",
           },
+            errorElement: "div",
+            errorClass: "invalid",
             messages: {
                 userName: {
                     required: "Имя обязательно",
