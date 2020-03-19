@@ -30,6 +30,8 @@
     color: $light
     padding: 0.5rem 0
     outline: none
+    &__group
+        position: relative
     &--light
         &::placeholder
             color: $light
@@ -82,10 +84,13 @@
         margin-left: 17px
 
 .invalid
-        color: tomato
+    // position: absolute
+    color: tomato
 input
     &.invalid
         border-bottom: 1px solid tomato
+        // position: relative
+        
 
 
 

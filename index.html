@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=19f1a633-3060-41dc-a750-325ad6ed6a43&lang=ru_RU" type="text/javascript">
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <title>Document</title>
 </head>
 <body>
     <!-- header -->
@@ -196,12 +197,12 @@
                     На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
                 </p>
                 <form action="#" class="form control__form">
-                    <div class="control__input-group">
+                    <div class="input-group control__input-group">
                         <label for="user-name" class="label form__label control__label">Имя</label>
                         <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
                     </div>
                     <div class="control__input-group">
-                        <label for="user-phone" class="label form__label control__label">Телефон</label>
+                        <label for="input-group user-phone" class="label form__label control__label">Телефон</label>
                         <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     
@@ -516,6 +517,20 @@
                     <button class="button button--primary footer__button">Отправить</button>
                 </form>   
             </div>
+            <div class="footer__wrap--responsive">
+                <div class="footer__icon">
+                    <h3 class="title footer__title footer__title__map title--primary">
+                        Ростов на дону, Торговый центр Plaza
+                        Прямой телефон +7 (999) 768 32 99
+                    </h3>
+                    <img class="footer__img--margin" src="img/mail.png" alt="">
+                    <img src="img/photo.png" alt="">
+                </div>
+                <div class="map footer__map" id="map"></div>
+            </div>
+            
+            </div>
+
         </div>
         <div class="footer__menu">
             <div class="container">
