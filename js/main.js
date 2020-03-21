@@ -77,7 +77,7 @@ $(document).ready(function(){
               email: true
             }
           },
-            errorElement: "div",
+            errorElement: "em",
             errorClass: "invalid",
             messages: {
                 userName: {
@@ -117,7 +117,7 @@ $(document).ready(function(){
               required: true,
             }
           },
-          errorElement: "div",
+          errorElement: "em",
           errorClass: "invalid",
             messages: {
                 userName: {
@@ -130,7 +130,19 @@ $(document).ready(function(){
                 userQuestion: {
                     required: "Задайте вопрос",
                 }
-          }
+          },
+          submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert('форма отправлена, мы свяжемся с вами через 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            });
+        } 
     });
     $('.control__form').validate ({
         // errorClass: "invalid",
@@ -142,7 +154,7 @@ $(document).ready(function(){
             },
             userPhone: "required",
           },
-            errorElement: "div",
+          errorElement: "em",
             errorClass: "invalid",
             messages: {
                 userName: {
@@ -151,7 +163,19 @@ $(document).ready(function(){
                     rangelength: "Имя не длиннее 15 символов"
                 },  
                 userPhone: "Телефон обязателен",
-          }
+          },
+          submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert('форма отправлена, мы свяжемся с вами через 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            });
+        } 
     });
     
     // Маска для телефона 
