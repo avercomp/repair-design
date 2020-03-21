@@ -999,12 +999,12 @@ img {
     .footer__wrap--responsive {
       background-color: #181818;
       padding: 1rem; }
-    .footer__map {
-      width: 100%; }
     .footer__icon {
       order: 2; }
   .work {
-    padding-bottom: 3rem; } }
+    padding-bottom: 3rem; }
+  .button-up {
+    visibility: hidden; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1044,6 +1044,15 @@ img {
   .footer__button {
     width: 80%;
     margin: auto; }
+  .footer__title__map {
+    max-width: 25.28rem; }
+  .footer__input-group {
+    flex-basis: 100%;
+    margin-bottom: 5rem; }
+  .footer__policy {
+    margin-top: -4rem; }
+    .footer__policy__label {
+      justify-content: start; }
   .types--margin-top {
     margin-top: -25px; }
   .types__section-title {
@@ -1066,6 +1075,10 @@ img {
   .footer__button {
     width: 100%;
     margin: auto; }
+  .footer__map {
+    min-width: 340px;
+    min-height: 225px;
+    max-height: 225px; }
   .video__play {
     max-width: 3.5rem;
     max-height: 3.5rem; }

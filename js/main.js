@@ -65,12 +65,11 @@ $(document).ready(function(){
     new WOW().init();
 
     $('.modal__form').validate ({
-        errorClass: "invalid",
         rules: {
             userName: {
                 required: true,
                 minlength: 2,
-                maxlength: 15
+                rangelength: [2, 15]
             },
             userPhone: "required",
             userEmail: {
@@ -83,14 +82,27 @@ $(document).ready(function(){
             messages: {
                 userName: {
                     required: "Имя обязательно",
-                    minlength: "Имя не короче двух букв"
+                    minlength: "Имя не короче двух букв",
+                    rangelength: "Имя не длиннее 15 символов"
             },  
             userPhone: "Телефон обязателен",
             userEmail: {
               required: "Обязательно укажите Ваш E-mail",
               email: "введите в формате: name@domain.com"
             }
-          }
+          },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert('форма отправлена, мы свяжемся с вами через 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            });
+        } 
     });
     $('.footer__form').validate ({
         errorClass: "invalid",
@@ -98,7 +110,7 @@ $(document).ready(function(){
             userName: {
                 required: true,
                 minlength: 2,
-                maxlength: 15
+                rangelength: [2, 15]
             },
             userPhone: "required",
             userQuestion: {
@@ -110,7 +122,8 @@ $(document).ready(function(){
             messages: {
                 userName: {
                     required: "Имя обязательно",
-                    minlength: "Имя не короче двух букв"
+                    minlength: "Имя не короче двух символов",
+                    rangelength: "Имя не длиннее 15 символов"
                 },  
                 userPhone: "Телефон обязателен",
 
@@ -120,12 +133,12 @@ $(document).ready(function(){
           }
     });
     $('.control__form').validate ({
-        errorClass: "invalid",
+        // errorClass: "invalid",
         rules: {
             userName: {
                 required: true,
                 minlength: 2,
-                maxlength: 15
+                rangelength: [2, 15]
             },
             userPhone: "required",
           },
@@ -134,7 +147,8 @@ $(document).ready(function(){
             messages: {
                 userName: {
                     required: "Имя обязательно",
-                    minlength: "Имя не короче двух букв"
+                    minlength: "Имя не короче двух букв",
+                    rangelength: "Имя не длиннее 15 символов"
                 },  
                 userPhone: "Телефон обязателен",
           }
@@ -150,12 +164,12 @@ $(document).ready(function(){
             }, {
                 searchControlProvider: 'yandex#search'
             }),
-    
+            
             // Создаём макет содержимого.
             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
             ),
-    
+            
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
                 hintContent: 'Собственный значок метки',
                 balloonContent: 'Это красивая метка'
@@ -192,6 +206,7 @@ $(document).ready(function(){
                 // Макет содержимого.
                 iconContentLayout: MyIconContentLayout
             });
+        myMap.behaviors.disable('scrollZoom');
     
         myMap.geoObjects
             .add(myPlacemark)
