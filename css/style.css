@@ -1066,6 +1066,10 @@ img {
     margin-top: -4rem; }
     .footer__policy__label {
       justify-content: start; }
+  #footer__policy__checkbox-error {
+    left: 0; }
+  #control__policy__checkbox-error {
+    left: 0; }
   .types--margin-top {
     margin-top: -25px; }
   .types__section-title {
@@ -1102,3 +1106,10 @@ img {
 @media screen and (max-height: 640px) {
   .hero__scroll-down {
     display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .animated {
+    transition-property: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important; } }
