@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=19f1a633-3060-41dc-a750-325ad6ed6a43&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=19f1a633-3060-41dc-a750-325ad6ed6a43&lang=ru_RU"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Турецкий ремонт</title>
 </head>
 <body>
     <!-- header -->
@@ -54,7 +54,8 @@
             </div>
             <a href="#" class="hero__scroll-down wow bounce infinite" data-wow-iteration="2" data-wow-delay="4s">листайте вниз</a>
         </section>
-        <!-- section hero -->
+        <!--//section hero -->
+        <!-- section project -->
         <div class="section section--dark project">
             <div class="container">
                 <div class="row">
@@ -179,7 +180,8 @@
                 </div>
             </div>
         </div>
-
+        <!--//section project -->
+        <!-- section control -->
         <section class="section control">
             <div class="container">
                 <div class="section-title control__section-title section-title--light wow fadeInUp" data-wow-duration="1s">
@@ -202,8 +204,8 @@
                         <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
                     </div>
                     <div class="control__input-group">
-                        <label for="input-group user-phone" class="label form__label control__label">Телефон</label>
-                        <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+                        <label for="user-phone" class="label form__label control__label">Телефон</label>
+                        <input type="tel" name="userPhone" class="input form__input control__input"  id="user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     
                     <button class="button button--primary control__button">Отправить</button>
@@ -214,6 +216,8 @@
                 </form>  
             </div>
         </section>
+        <!--//section control -->
+        <!-- section types -->
         <section class="section types types--margin-top ">
             <div class="container">
                 <div class="section-title types__section-title wow fadeInUp" data-wow-duration="1s">
@@ -288,6 +292,8 @@
                 </div>
             </div>
         </section>
+        <!--//section types -->
+        <!-- section design -->
         <section class="section design design--bgcolor">
             <div class="container">
                 <div class="section-title design__section-title  wow fadeInUp" data-wow-duration="1s">
@@ -367,6 +373,8 @@
                 </div>
             </div>
         </section>
+        <!--//section design -->
+        <!-- section work -->
         <section class="section section--dark work">
             <div class="container">
                 <div class="row">
@@ -491,7 +499,10 @@
                 </div>
             </div>
         </section>
+        <!--//section work -->
     </main>
+    <!--//main -->
+    <!-- footer -->
     <footer class="footer section--dark">
         <div class="container footer__container">
             <div class="footer__wrap">
@@ -499,11 +510,11 @@
                 <form action="send.php" method="POST" class="form footer__form">
                    <div class="input-group footer__input-group">
                         <label for="user-name" class="label form__label label--light">Имя</label>
-                        <input type="text" name="userName" class="input form__input  input--light" id="user-name" placeholder="Как вас зовут:">
+                        <input type="text" name="userName" class="input form__input  input--light" id="footer-user-name" placeholder="Как вас зовут:">
                    </div>
                    <div class="input-group footer__input-group">
                         <label for="user-phone"   class="label form__label label--light">Телефон</label>
-                        <input type="tel" name="userPhone" class="input form__input  input--light" id="user-phone" placeholder="Ваш номер телефона:">
+                        <input type="tel" name="userPhone" class="input form__input  input--light" id="footer-user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     <div class="input-group footer__input-group footer__input-group--full-width ">
                         <label for="user-question" class="label form__label label--light">Вопрос</label>
@@ -528,9 +539,6 @@
                 </div>
                 <div class="map footer__map" id="map"></div>
             </div>
-            
-            </div>
-
         </div>
         <div class="footer__menu">
             <div class="container">
@@ -552,7 +560,8 @@
             </div>
         </div>
     </footer>
-    <!-- main -->
+    <!--//footer -->
+    <!-- modal -->
     <div class="modal">
         <div class="modal__dialog">
             <button class="modal__close">
@@ -563,11 +572,11 @@
             <form action="send.php" method="POST" class="form modal__form">
                 <div class="input-group modal__input-group">
                     <label for="user-name" class="label form__label label--light">Имя</label>
-                    <input type="text" name="userName" class="input form__input  input--light" id="user-name" placeholder="Как вас зовут:">
+                    <input type="text" name="userName" class="input form__input  input--light" id="modal-user-name" placeholder="Как вас зовут:">
                 </div>
                 <div class="input-group modal__input-group">
                     <label for="user-phone" class="label form__label label--light">Телефон</label>
-                    <input type="tel" name="userPhone" class="input form__input  input--light" id="user-phone" placeholder="Ваш номер телефона:">
+                    <input type="tel" name="userPhone" class="input form__input  input--light" id="modal-user-phone" placeholder="Ваш номер телефона:">
                 </div>
                 <div class="input-group modal__input-group">
                     <label for="user-email" class="label form__label label--light">Email</label>
@@ -575,19 +584,20 @@
                 </div>
                 
                 <div class="policy modal__policy">                
-                    <input type="checkbox" name="modal-policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+                    <input type="checkbox" name="modal-policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked required>
                     <label for="modal-policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
                 </div>
                 <button class="button button--primary modal__button">Отправить заявку</button>
             </form>    
         </div>
     </div>
+    <!--//modal -->
     <a href="#" class="button-up">наверх</a>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="jquery/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="jquery/jquery.validate.min.js"></script>
-    <script src="jquery/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

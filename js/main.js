@@ -76,7 +76,9 @@ $(document).ready(function(){
               required: true,
               email: true
             }
+            
           },
+
             errorElement: "em",
             errorClass: "invalid",
             messages: {
