@@ -421,6 +421,14 @@ em.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+#footer__policy__checkbox-error {
+  left: 125px;
+  border-bottom: 1px solid tomato; }
+
+#control__policy__checkbox-error {
+  left: 245px;
+  border-bottom: 1px solid tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -692,6 +700,7 @@ img {
   margin: auto; }
 
 .control__policy {
+  position: relative;
   flex-basis: 100%;
   margin-top: 1.2rem; }
   .control__policy__label {
@@ -811,7 +820,8 @@ img {
       flex-direction: column;
       margin-bottom: 3.428rem; }
   .modal__policy {
-    margin-bottom: 2.7rem; }
+    margin-bottom: 2.7rem;
+    position: relative; }
   .modal__button {
     align-self: flex-end; }
 
@@ -906,6 +916,7 @@ img {
         flex-basis: 100%;
         margin-bottom: 2rem; }
   .footer__policy {
+    position: relative;
     flex-basis: 100%;
     margin-bottom: 3.6rem; }
   .footer__button {

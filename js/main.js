@@ -72,10 +72,11 @@ $(document).ready(function(){
                 rangelength: [2, 15]
             },
             userPhone: "required",
+            policy__label: "required",
             userEmail: {
               required: true,
               email: true
-            }
+            },
             
           },
 
@@ -87,6 +88,7 @@ $(document).ready(function(){
                     minlength: "Имя не короче двух букв",
                     rangelength: "Имя не длиннее 15 символов"
             },  
+            modal__policy__checkbox: "Необходимо согласие на обработку данных",
             userPhone: "Телефон обязателен",
             userEmail: {
               required: "Обязательно укажите Ваш E-mail",
@@ -122,6 +124,7 @@ $(document).ready(function(){
           errorElement: "em",
           errorClass: "invalid",
             messages: {
+                footer__policy__checkbox: "Необходимо согласие на обработку данных",
                 userName: {
                     required: "Имя обязательно",
                     minlength: "Имя не короче двух символов",
@@ -149,6 +152,7 @@ $(document).ready(function(){
     $('.control__form').validate ({
         // errorClass: "invalid",
         rules: {
+            control__policy__checkbox: "required",
             userName: {
                 required: true,
                 minlength: 2,
@@ -159,6 +163,7 @@ $(document).ready(function(){
           errorElement: "em",
             errorClass: "invalid",
             messages: {
+                control__policy__checkbox: "Необходимо согласие на обработку данных",
                 userName: {
                     required: "Имя обязательно",
                     minlength: "Имя не короче двух букв",
