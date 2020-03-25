@@ -6,12 +6,13 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=19f1a633-3060-41dc-a750-325ad6ed6a43&lang=ru_RU"></script>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Турецкий ремонт</title>
 </head>
 <body>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61333015, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61333015" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     <!-- header -->
     <header class="header">
         <div class="container">
@@ -27,7 +28,7 @@
                 </nav>
                 <div class="contacts menu__contacts">
                     <a href="+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-                    <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+                    <button onclick="ym('61333015', 'reachGoal', 'button'); return true;" class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -593,7 +594,7 @@
     </div>
     <!--//modal -->
     <a href="#" class="button-up">наверх</a>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
