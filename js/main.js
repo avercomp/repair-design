@@ -95,18 +95,18 @@ $(document).ready(function(){
               email: "введите в формате: name@domain.com"
             }
           },
-        submitHandler: function(form) {
-            $.ajax({
-                type: "POST",
-                url: "send.php",
-                data: $(form).serialize(),
-                success: function (response) {
-                    alert('форма отправлена, мы свяжемся с вами через 10 минут');
-                    $(form)[0].reset();
-                    modal.removeClass('modal--visible');
-                }
-            });
-        } 
+        // submitHandler: function(form) {
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "send.php",
+        //         data: $(form).serialize(),
+        //         success: function (response) {
+        //             alert('форма отправлена, мы свяжемся с вами через 10 минут');
+        //             $(form)[0].reset();
+        //             modal.removeClass('modal--visible');
+        //         }
+        //     });
+        // } 
     });
     $('.footer__form').validate ({
         errorClass: "invalid",
@@ -136,21 +136,20 @@ $(document).ready(function(){
                     required: "Задайте вопрос",
                 }
           },
-          submitHandler: function(form) {
-            $.ajax({
-                type: "POST",
-                url: "send.php",
-                data: $(form).serialize(),
-                success: function (response) {
-                    alert('форма отправлена, мы свяжемся с вами через 10 минут');
-                    $(form)[0].reset();
-                    modal.removeClass('modal--visible');
-                }
-            });
-        } 
+        //   submitHandler: function(form) {
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "send.php",
+        //         data: $(form).serialize(),
+        //         success: function (response) {
+        //             alert('форма отправлена, мы свяжемся с вами через 10 минут');
+        //             $(form)[0].reset();
+        //             modal.removeClass('modal--visible');
+        //         }
+        //     });
+        // } 
     });
     $('.control__form').validate ({
-        // errorClass: "invalid",
         rules: {
             control__policy__checkbox: "required",
             userName: {
@@ -171,22 +170,22 @@ $(document).ready(function(){
                 },  
                 userPhone: "Телефон обязателен",
           },
-          submitHandler: function(form) {
-            $.ajax({
-                type: "POST",
-                url: "send.php",
-                data: $(form).serialize(),
-                success: function (response) {
-                    alert('форма отправлена, мы свяжемся с вами через 10 минут');
-                    $(form)[0].reset();
-                    modal.removeClass('modal--visible');
-                }
-            });
-        } 
+        //   submitHandler: function(form) {
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "send.php",
+        //         data: $(form).serialize(),
+        //         success: function (response) {
+        //             alert('форма отправлена, мы свяжемся с вами через 10 минут');
+        //             $(form)[0].reset();
+        //             modal.removeClass('modal--visible');
+        //         }
+        //     });
+        // } 
     });
     
     // Маска для телефона 
-    $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) __-__-___"});
     // Яндекс карты
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
@@ -242,6 +241,29 @@ $(document).ready(function(){
         myMap.geoObjects
             .add(myPlacemark)
             .add(myPlacemarkWithContent);
+    });
+    var player;
+    $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '465',
+          width: '100%',
+          videoId: 'RHzzLqJWqHs',
+          events: {
+            'onReady': videoPlay,
+
+          }
+        });
+      })
+      function videoPlay(event) {
+          event.target.playVideo();
+      };
+      $(document).ready(function(){
+        $(".nav").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 3000);
+        });
     });
 });
 

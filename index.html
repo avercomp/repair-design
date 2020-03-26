@@ -12,22 +12,22 @@
     <title>Турецкий ремонт</title>
 </head>
 <body>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61333015, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61333015" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61333015, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61333015" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     <!-- header -->
     <header class="header">
         <div class="container">
             <div class="menu">
-                <div class="logo menu-logo wow fadeInRight">Repair Design Project</div>
+                <a  href="http://repair-design/" class="logo menu-logo wow fadeInRight">Repair Design Project</a>
                 <nav class="nav menu-nav">
-                    <a href="#" class="nav__item">Главная</a>
-                    <a href="#" class="nav__item">Проекты</a>
+                    <a href="#hero" class="nav__item">Главная</a>
+                    <a href="#project" class="nav__item">Проекты</a>
                     <a href="#" class="nav__item">Замер</a>
                     <a href="#" class="nav__item">Команда</a>
                     <a href="#" class="nav__item">Отзывы</a>
-                    <a href="#" class="nav__item">Контакты</a>
+                    <a href="#footer" class="nav__item">Контакты</a>
                 </nav>
                 <div class="contacts menu__contacts">
-                    <a href="+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+                    <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
                     <button onclick="ym('61333015', 'reachGoal', 'button'); return true;" class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
                 </div>
             </div>
@@ -37,7 +37,7 @@
     <!-- main -->
     <main>
         <!-- section hero -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="instagram hero__instagram">
                 <a href="#" class="instagram__link">instagram</a>
             </div>
@@ -57,7 +57,7 @@
         </section>
         <!--//section hero -->
         <!-- section project -->
-        <div class="section section--dark project">
+        <div class="section section--dark project" id="project">
             <div class="container">
                 <div class="row">
                     <div class="col-50">
@@ -193,7 +193,8 @@
                         <img src="img/video.svg" alt="video">
                     </div>
                 </div>
-                <div class="control__video video">
+                <div class="control__video video" id="player">
+                    <script src="https://www.youtube.com/iframe_api"></script>
                     <img src="img/play-icon.svg" alt="play-icon" class="video__play">
                 </div>
                 <p class="control__text">
@@ -500,6 +501,76 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="section clients">
+            <div class="container container__clients">
+                <div class="section-title types__section-title wow fadeInUp" data-wow-duration="1s">
+                    <h2 class="section-title__heading clients-title__heading">
+                        Наши клиенты
+                    </h2>
+                    <div class="section-title__img clients-title__img">
+                        <img src="img/clients.svg" alt="repair">
+                    </div>
+                    <p class="section-title__text clients-title__text">
+                        80% наших клиентов рекомендуют нас своим знакомым и друзьям
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-30">
+                        <div class="clients__card__text">
+                            <img  class="clients__img" src="img/clients-1.png" alt="Клиент">
+                            <h3 class="card__title clients__card__title">Савельева  <br> Екатерина Львовна</h3>
+                            <p class="clients__card__title__text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.</p>
+                        </div>
+                        <div class="clients__tag">
+                            <div class="clients__tag--left">
+                                <img src="img/graffic.svg" alt="">
+                                <p class="clients__tag__text">40 M<sup>2</sup></p>
+                            </div>
+                            <div class="clients__tag--right">
+                                <img src="img/list.svg" alt="">
+                                <p class="clients__tag__text"> 48 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="clients__card__text">
+                            <img  class="clients__img" src="img/clients-2.png" alt="Клиент">
+                            <h3 class="card__title clients__card__title">Большов Михаил <br>Анатольевич</h3>
+                            <p class="clients__card__title__text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Я рекомендую этих мастеров.</p>
+                        </div>
+                        <div class="clients__tag">
+                            <div class="clients__tag--left">
+                                <img src="img/graffic.svg" alt="">
+                                <p class="clients__tag__text">90 M<sup>2</sup></p>
+                            </div>
+                            <div class="clients__tag--right">
+                                <img src="img/list.svg" alt="">
+                                <p class="clients__tag__text"> 128 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="clients__card__text">
+                            <img  class="clients__img" src="img/clients-3.png" alt="Клиент">
+                            <h3 class="card__title clients__card__title">Хасанов Даниил <br>Муратович</h3>
+                            <p class="clients__card__title__text" >Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Цены демократические.</p>
+                        </div>
+                        <div class="clients__tag">
+                            <div class="clients__tag--left">
+                                <img src="img/graffic.svg" alt="">
+                                <p class="clients__tag__text">56 M<sup>2</sup></p>
+                            </div>
+                            <div class="clients__tag--right">
+                                <img src="img/list.svg" alt="">
+                                <p class="clients__tag__text"> 86 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--//section work -->
     </main>
     <!--//main -->
@@ -526,7 +597,7 @@
                         <input type="checkbox" name="footer__policy__checkbox" id="footer__policy__checkbox" class="policy__checkbox" checked required>
                         <label for="footer__policy__checkbox" class="policy__label policy__label--center footer__policy__label">я соглашаюсь с обработкой данных</label>
                     </div>
-                    <button class="button button--primary footer__button">Отправить</button>
+                    <button class="button button--primary footer__button" id="footer">Отправить</button>
                 </form>   
             </div>
             <div class="footer__wrap--responsive">
@@ -544,17 +615,17 @@
         <div class="footer__menu">
             <div class="container">
                 <div class="menu">
-            <div class="logo menu-logo wow fadeInRight">Repair Design Project</div>
+                    <a  href="http://repair-design/" class="logo menu-logo wow fadeInRight">Repair Design Project</a>
             <nav class="nav menu-nav">
-                <a href="#" class="nav__item">Главная</a>
-                <a href="#" class="nav__item">Проекты</a>
+                <a href="#hero" class="nav__item">Главная</a>
+                <a href="#project" class="nav__item">Проекты</a>
                 <a href="#" class="nav__item">Замер</a>
                 <a href="#" class="nav__item">Команда</a>
                 <a href="#" class="nav__item">Отзывы</a>
-                <a href="#" class="nav__item">Контакты</a>
+                <a href="#footer" class="nav__item">Контакты</a>
             </nav>
             <div class="contacts menu__contacts">
-                <a href="+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+                <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
                 <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
             </div>
                 </div>
