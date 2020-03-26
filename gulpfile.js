@@ -37,7 +37,7 @@ function buildCSS(done) {
     done();
 };
 function buildJS(done) {
-    src(['js/**/**.js', '!js/**min.js'])
+    src(['js/**.js', '!js/**min.js'])
         .pipe(minify({ext:{
             min:'.js'
             }

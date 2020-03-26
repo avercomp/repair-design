@@ -951,8 +951,7 @@ button:focus,
   .footer__map {
     margin: auto;
     margin-bottom: 4.71rem;
-    max-width: 925px;
-    min-height: 465px; }
+    height: 465px; }
   .footer__icon {
     margin: auto;
     max-width: 33.57rem;
@@ -1016,6 +1015,66 @@ button:focus,
     margin-right: 1.43rem; }
   .clients__tag img {
     margin-right: 1.43rem; }
+
+.team__wrapper {
+  max-width: 73.43rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto; }
+
+.team__section-title__text {
+  margin-bottom: 6.07rem;
+  max-width: 31.79rem; }
+  .team__section-title__text--bottom {
+    max-width: 40.57rem;
+    text-align: center;
+    line-height: 2.43rem; }
+
+.team__card {
+  position: relative;
+  display: inline-block; }
+  .team__card__text {
+    margin-top: -6.5rem;
+    text-align: center;
+    padding: 0;
+    max-width: 16.64rem; }
+  .team__card__pricetag {
+    bottom: 0; }
+  .team__card--orange {
+    font-family: 'Yeseva One', cursive;
+    font-size: 0.93rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #E3B873;
+    padding: 1rem 1.62rem; }
+  .team__card__title {
+    padding-top: 1.57rem; }
+    .team__card__title__text {
+      font-size: 1.286rem;
+      color: #959595;
+      margin-bottom: 1.786rem; }
+
+.team__tag {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  width: 70px;
+  height: 70px;
+  background-color: #E3B873;
+  padding: 1rem; }
+
+.team__line {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.79rem;
+  margin-bottom: 1.21rem; }
+
+.team__line::after {
+  content: '';
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  margin-left: 2rem; }
 
 @media screen and (max-width: 1256px) {
   html {
@@ -1093,6 +1152,8 @@ button:focus,
     .footer__wrap--responsive {
       background-color: #181818;
       padding: 1rem; }
+    .footer__map {
+      max-width: 650px; }
     .footer__icon {
       order: 2; }
   .work {
